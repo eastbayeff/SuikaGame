@@ -7,6 +7,7 @@ public class MainMenuManager : MonoBehaviour
     [SerializeField] private GameObject _creditsPanel;
     [SerializeField] private GameObject _mainPanel;
     [SerializeField] private GameObject _star;
+    [SerializeField] private GameObject _titleCanvas;
 
     void Start()
     {
@@ -28,5 +29,6 @@ public class MainMenuManager : MonoBehaviour
         _creditsPanel.SetActive(!_creditsPanel.activeSelf);
         _mainPanel.SetActive(!_mainPanel.activeSelf);
         _star.SetActive(!_star.activeSelf);
+        _titleCanvas.SetActive(!_titleCanvas.activeSelf);
     }
 }
